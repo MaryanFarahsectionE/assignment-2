@@ -1,0 +1,108 @@
+body, html {
+    margin: 0; /* removes default margin */
+    padding: 0; /* removes default padding */
+    font-family: 'Courier New', monospace; /* sets a typewriter-like font for a retro feel */
+    background-color: #000; /* sets a dark theme reminiscent of "Stranger Things" */
+    color: #fff; /* ensures text is readable against the dark background */
+    text-align: center; /* centers the content for a balanced look */
+}
+nav ul {
+    list-style-type: none; /* cleans up the list for the navigation bar */
+    background-color: #D90429; /* uses a vibrant red to grab attention */
+    padding: 20px 0; /* adds vertical space for better readability */
+}
+
+nav ul li {
+    display: inline; /* arranges navigation items in a horizontal line */
+    margin: 0 15px; /* adds space between navigation items for clarity */
+}
+
+nav ul li a {
+    text-decoration: none; /* removes underline from links for a cleaner look */
+    color: #fff; /* keeps text white for consistency and readability */
+    font-size: 18px; /* slightly enlarges the text for easy navigation */
+}
+
+header {
+    padding: 50px 20px; /* gives space around the header content */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header-background.jpg'); /* darkens the background image for mood */
+    background-size: cover; /* ensures the background image covers the entire header */
+}
+
+#characters {
+    display: flex; /* enables a flexible layout for character cards */
+    flex-wrap: wrap; /* allows cards to wrap to the next line if needed */
+    justify-content: center; /* centers the cards within the container */
+    gap: 20px; /* ensures space between cards for visual separation */
+}
+
+.character-card {
+    flex: 0 1 300px; /* sets the base size of cards but allows them to shrink if needed */
+    display: flex; /* uses flexbox for layout within each card */
+    flex-direction: column; /* stacks elements vertically within each card */
+    align-items: center; /* centers the content within each card */
+    background-color: #2E2E2E; /* chooses a slightly lighter shade of black for contrast */
+    padding: 20px; /* adds padding within cards for spacing */
+    border-radius: 10px; /* rounds the corners of the cards for a modern look */
+}
+
+.character-image {
+    width: 200px; /* sets a fixed width for character images */
+    height: auto; /* maintains the aspect ratio of the images */
+    border-radius: 50%; /* makes the images circular */
+}
+
+.read-more {
+    padding: 10px 20px; /* adds padding to the button for a larger clickable area */
+    background-color: #D90429; /* matches the navigation bar to tie the design together */
+    color: #FFFFFF; /* ensures the button text is readable */
+    border: none; /* removes the default button border for a cleaner look */
+    border-radius: 5px; /* slightly rounds the button corners */
+    cursor: pointer; /* changes the cursor to indicate the button is clickable */
+    transition: background-color 0.3s; /* animates the button color change on hover */
+}
+
+.read-more:hover {
+    background-color: #BB042B; /* darkens the button on hover for interactive feedback */
+}
+
+.gallery-container {
+    display: flex; /* arranges gallery items in a flexible row */
+    flex-wrap: wrap; /* allows items to wrap to the next line */
+    justify-content: center; /* centers the gallery items */
+    gap: 15px; /* adds space between gallery items */
+}
+
+.gallery-item img {
+    width: 200px; /* sets a fixed width for consistency */
+    height: 150px; /* sets a fixed height to maintain a uniform size */
+    object-fit: cover; /* ensures images cover the area without distortion */
+    border-radius: 5px; /* softens the image edges with a slight curve */
+}
+
+.social-links img {
+    width: 40px; /* sets a standard size for social icons */
+    height: 40px; /* maintains a square aspect ratio for icons */
+    object-fit: contain; /* ensures icons are fully visible without distortion */
+    margin: 0 10px; /* adds horizontal space between icons */
+}
+
+.video-container iframe {
+    width: 100%; /* ensures the video is responsive and fills the container */
+    height: 360px; /* sets a fixed height for consistency */
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    #characters {
+        justify-content: center; /* Ensures cards are centered on smaller screens */
+    }
+
+    .character-card {
+        margin: 20px 10px; /* Adjusts margin for smaller screens */
+    }
+}
