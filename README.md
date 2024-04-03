@@ -1,0 +1,2 @@
+
+i made this website for "stranger things season 5" because i'm a huge fan. it's got everything from character bios, a peek into the new season's story, some cool behind-the-scenes shots, and the official trailer. i wanted to keep the vibe dark and mysterious, just like the show, so i went with a black background and white text. the navigation bar pops with neon red, and i used flexbox to make sure everything looks good no matter what device you're on. i kept all the images and videos responsive, so they'll fit your screen perfectly. 
